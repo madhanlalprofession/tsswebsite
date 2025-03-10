@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - TechSukras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="logo1.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div> 
+    <script src="navbar.js"></script>
+    <section class="hero-section">
+        <img src="career.webp" alt="Hero Image" class="hero-image">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Join Our Team</h1>
+            <p>Build the future with us</p>
+        </div>
+    </section>
+
+
+    <!-- Why Join Us -->
+    <section class="why-join-us">
+        <h2 data-aos="fade-up">Why Work With Us?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card" data-aos="fade-up">
+                <i class="fas fa-rocket"></i>
+                <h3>Innovation First</h3>
+                <p>Work on cutting-edge technologies and challenging projects</p>
+            </div>
+            <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <h3>Great Culture</h3>
+                <p>Collaborative environment with talented professionals</p>
+            </div>
+            <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-chart-line"></i>
+                <h3>Growth Opportunities</h3>
+                <p>Continuous learning and career development</p>
+            </div>
+            <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-heart"></i>
+                <h3>Work-Life Balance</h3>
+                <p>Flexible working hours and remote options</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="open-positions">
+        <h2 data-aos="fade-up">Open Positions</h2>
+        <div class="positions-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All Departments</button>
+            <button class="filter-btn" data-filter="engineering">Engineering</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="marketing">Marketing</button>
+        </div>
+
+        <div class="positions-grid">
+            <div class="position-card" data-category="engineering" data-aos="fade-up">
+                <div class="position-header">
+                    <h3>Senior Full Stack Developer</h3>
+                    <span class="job-type">Full-time</span>
+                </div>
+                <div class="position-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Remote / San Francisco</p>
+                    <p><i class="fas fa-clock"></i> Posted 2 days ago</p>
+                </div>
+                <p class="position-description">
+                    We're looking for an experienced Full Stack Developer to join our engineering team...
+                </p>
+                <button class="apply-btn" data-position="senior-fullstack">Apply Now</button>
+            </div>
+            <!-- Add more position cards -->
+        </div>
+    </section>
+
+    <!-- Application Modal -->
+    <div class="application-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Apply for <span class="position-title"></span></h2>
+            <form id="applicationForm" class="application-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="portfolio">Portfolio URL</label>
+                    <input type="url" id="portfolio" name="portfolio">
+                </div>
+                <div class="form-group">
+                    <label for="resume">Resume/CV * (Max 2MB)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter</label>
+                    <textarea id="coverLetter" name="coverLetter" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-application">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+       <!-- Remove duplicate scripts and fix closing tags -->
+       <div id="footer"></div> 
+       <script src="footer.js"></script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+       <script>
+           (function() {
+               emailjs.init("9jhgtn5-2BPn_oFOa"); // Make sure to add your public key here
+           })();
+       </script>
+       <script src="script.js"></script>
+       <script src="careers.js"></script>
+   </body>
+   </html>

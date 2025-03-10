@@ -1,0 +1,238 @@
+/* Service Hero Section */
+/* Service Hero Section */
+.service-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  animation: zoomIn 1.5s ease-out;
+}
+
+.service-hero-content {
+  padding: 2rem;
+  background: white;
+  width: 100%;
+  animation: slideUp 1s ease-out;
+}
+
+.service-hero-content h1 {
+  color: #1d4ed8;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-hero-content p {
+  color: #475569;
+  font-size: 1.25rem;
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(1.1);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.hero-background {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  animation: zoomIn 1.5s ease-out;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.hero-background:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Keep existing animations */
+@keyframes zoomIn {
+  from {
+      transform: scale(1.1);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Service Details Section */
+.service-details {
+  background-color: #f4f6f9;
+  padding: 6rem 2rem;
+  display: block;
+}
+
+.service-content h2 {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.approach-section {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.approach-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.approach-content h2 {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+.expertise-card i {
+  color: blue; /* Blue color */
+}
+
+.approach-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #475569;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.process-step {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #1d4ed8;
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.process-step h3 {
+  color: #1d4ed8;
+  margin: 1rem 0;
+}
+
+.expertise-section {
+  background: linear-gradient(135deg, #f3f4f6, #eef2ff);
+  padding: 6rem 2rem;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expertise-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cta-section {
+  background: #1d4ed8;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+/* CTA Button */
+.cta-button {
+  background-color: #2d3748; /* Dark color */
+  color: white; /* Text color */
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4a5568; /* Slightly lighter dark color for hover */
+  color: #edf2f7; /* Light text color on hover */
+  transform: translateY(-3px); /* Button hover effect */
+}
+
+.cta-button:active {
+  background-color: #2b6cb0; /* Lighter blue when clicked */
+  color: white; /* Text stays white when clicked */
+}

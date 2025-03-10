@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechSukras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="screen">
+    <link rel="icon" href="logo1.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div> 
+    <script src="navbar.js"></script>
+    <section class="hero-section">
+        <img src="contact.webp" alt="Hero Image" class="hero-image">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Get in Touch</h1>
+            <p>Let's discuss how we can help your business grow</p>
+        </div>
+    </section>
+
+
+    <section class="contact-info-section">
+        <div class="info-grid">
+            <!-- Address Card -->
+            <div class="info-card" data-aos="fade-up">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Location</h3>
+                <a href="https://www.google.com/maps?q=TechSukras+Software+Private+Limited,+Ground+Floor,+Plot+No.+849,+2nd+Main+Road+Cross,+Metro+Grand+City,+Kundrathur,+Chennai+-+600+069,+Tamil+Nadu,+India" target="_blank">
+                    TechSukras Software Private Limited, <br>
+                    Ground Floor, Plot No. 849, <br>
+                    2nd Main Road Cross, Metro Grand City, <br>
+                    Kundrathur, Chennai - 600069, Tamil Nadu, India
+                </a>
+            </div>
+    
+            <!-- Phone Card -->
+            <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <a href="tel:+918148290467">+91 81482 90467</a>
+                <p>Mon-Sat, 9am-6pm IST</p>
+            </div>
+    
+            <!-- Email Card -->
+            <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <a href="mailto:reach@techsukras.com">reach@techsukras.com</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="contact-form-section">
+      <div class="form-container">
+          <form id="contactForm" class="contact-form" data-aos="fade-up" onsubmit="sendEmail(event)">
+              <div class="form-grid">
+                  <div class="form-group">
+                      <label for="name">Full Name *</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email Address *</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="tel" id="phone" name="phone">
+                  </div>
+                  <div class="form-group">
+                      <label for="company">Company Name</label>
+                      <input type="text" id="company" name="company">
+                  </div>
+                  <div class="form-group full-width">
+                      <label for="subject">Subject *</label>
+                      <input type="text" id="subject" name="subject" required>
+                  </div>
+                  <div class="form-group full-width">
+                      <label for="message">Message *</label>
+                      <textarea id="message" name="message" rows="6" required></textarea>
+                  </div>
+              </div>
+              <div class="form-footer">
+                  <button type="submit" class="submit-btn" id="submitBtn">
+                      <span>Send Message</span>
+                      <i class="fas fa-paper-plane"></i>
+                  </button>
+              </div>
+              <div id="statusMessage" class="status-message"></div>
+          </form>
+      </div>
+  </section>
+
+    <section class="map-section" data-aos="fade-up">
+      <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.773039564421!2d80.10507580893947!3d12.986363214505019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526134ad5e3ae9%3A0x16a2e53c60f6e75!2sTechSukras%20Software%20Private%20Limited!5e0!3m2!1sen!2sin!4v1741264213374!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    </section>
+
+    <section class="faq-section">
+        <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>What services do you offer?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We specialize in web development, mobile app development, cloud solutions, IT consulting, and digital marketing services.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How can I request a quote?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can request a quote by filling out our contact form above or by directly emailing us at reach@techsukras.com. We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>Do you provide support after project completion?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we provide comprehensive post-project support and maintenance services to ensure your solution continues to perform optimally.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>What industries do you serve?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We serve a wide range of industries, including healthcare, education, e-commerce, finance, real estate, and startups.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How long does it take to complete a project?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The timeline varies depending on the complexity of the project. Small projects may take a few weeks, while larger projects can take several months. We provide estimated timelines during the initial consultation.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>Can you customize a solution for my business?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we tailor our solutions based on your specific business needs and requirements. We ensure that our services align perfectly with your goals.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>What technologies do you use?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We work with various technologies, including HTML, CSS, JavaScript, React, Angular, Node.js, Python, Java, MySQL, MongoDB, AWS, and more.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>Do you work with startups and small businesses?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we work with businesses of all sizes, from startups to large enterprises. Our goal is to provide scalable and efficient solutions that help you grow.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>How do you ensure the security of my data?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We follow industry best practices for data security, including encryption, secure hosting, regular security audits, and compliance with data protection regulations.</p>
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    <h3>What payment methods do you accept?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept payments via bank transfer, credit/debit cards, PayPal, and other digital payment methods. Contact us for more details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div id="footer"></div> 
+    <script src="footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="contact.js">
+       
+      
+    </script>
+</body>
+</html>
